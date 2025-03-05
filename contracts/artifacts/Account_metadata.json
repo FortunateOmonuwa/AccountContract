@@ -1,0 +1,162 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_phoneNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_email",
+						"type": "string"
+					},
+					{
+						"internalType": "string[]",
+						"name": "_secrets",
+						"type": "string[]"
+					}
+				],
+				"name": "CreateAccount",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "walletAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "email",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "phoneNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "balance",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isVerified",
+								"type": "bool"
+							},
+							{
+								"internalType": "bytes32[]",
+								"name": "secretPhrases",
+								"type": "bytes32[]"
+							}
+						],
+						"internalType": "struct Account.UserAccount",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "viewAccounts",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "walletAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "email",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "phoneNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "balance",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isVerified",
+								"type": "bool"
+							},
+							{
+								"internalType": "bytes32[]",
+								"name": "secretPhrases",
+								"type": "bytes32[]"
+							}
+						],
+						"internalType": "struct Account.UserAccount[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Account.sol": "Account"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Account.sol": {
+			"keccak256": "0x8baafee41551379e5acd9e21b6ca61729f5bd2453465930ef9b914dc7b6c9d2b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6d273d9d3ee60c829beecd336e912ae90e527c939428ee277ea5d7cac419a417",
+				"dweb:/ipfs/QmRP24YdCmYjEsG1u31D6a7Huzn8oswdv8dgpXQiY6HDhK"
+			]
+		}
+	},
+	"version": 1
+}

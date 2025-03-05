@@ -1,0 +1,181 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_accountAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_phoneNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_email",
+						"type": "string"
+					},
+					{
+						"internalType": "string[]",
+						"name": "_secrets",
+						"type": "string[]"
+					}
+				],
+				"name": "CreateWalletOrAccount",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "walletAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "email",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "phoneNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "balance",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isVerified",
+								"type": "bool"
+							},
+							{
+								"internalType": "bytes32[]",
+								"name": "secretPhrases",
+								"type": "bytes32[]"
+							}
+						],
+						"internalType": "struct Account.UserAccount",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ViewAllAccountsOrWallets",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "walletAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "email",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "phoneNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "balance",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isVerified",
+								"type": "bool"
+							},
+							{
+								"internalType": "bytes32[]",
+								"name": "secretPhrases",
+								"type": "bytes32[]"
+							}
+						],
+						"internalType": "struct Account.UserAccount[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/AccountMgt.sol": "AccountManager"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Account.sol": {
+			"keccak256": "0xa8f25c049a840c9be6696011eb23b8431edeb1d9a4fd3d293c036408f14747e4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://89a74ae10dea9eda84a3a659faffbc8ffa236a23b86dc6618e30edeeff07d683",
+				"dweb:/ipfs/QmPwmkZFSUN5aBwYeQPJLP7nPZTxf6Uo9835Sg9M3gzTYi"
+			]
+		},
+		"contracts/AccountMgt.sol": {
+			"keccak256": "0xe819a96b3f456aa43d69125de7f2e594f468c333f7b9adfa8ca0e09e6a827dfa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://47dba5a0b53074b2442e27eca840168588da243f64a4a0a6bf0ab284516b9181",
+				"dweb:/ipfs/QmPZVUyGYMDPGKhExBDP5PFeVwZdN55CW5MvPTkEWMPiU5"
+			]
+		}
+	},
+	"version": 1
+}
