@@ -16,4 +16,8 @@ contract AccountManager{
     function ViewAllAccountsOrWallets() public view returns (Account.UserAccount[] memory ){
         return accountContract.viewAccounts();
     }
+    
+    function ViewSpecificAccount(uint256 _id) public view returns (Account.UserAccount memory){
+        return  accountContract.ViewAccountByID(_id);
+    }
 }
