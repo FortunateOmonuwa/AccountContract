@@ -17,7 +17,7 @@ contract AccountManager{
         return accountContract.viewAccounts();
     }
     
-    function ViewSpecificAccount(uint256 _id) public view returns (Account.UserAccount memory){
-        return  accountContract.ViewAccountByID(_id);
+    function ViewSpecificAccount(string memory _id) public view returns (Account.UserAccount memory){
+        return  accountContract.ViewAccountByEmail(_id);
     }
 }

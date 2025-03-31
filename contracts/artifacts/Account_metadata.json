@@ -74,12 +74,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "_id",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
-				"name": "ViewAccountByID",
+				"name": "ViewAccountByEmail",
 				"outputs": [
 					{
 						"components": [
@@ -206,11 +206,11 @@
 	},
 	"sources": {
 		"contracts/Account.sol": {
-			"keccak256": "0x7500ef2b48e8f1576fc82182554caff852e987416ca125255c36b05c76cd7fa6",
+			"keccak256": "0xeb03b637da2e548262e5edbb84f845d084e525eb47aca530f0dd5b385f844ef2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8e2393c691c166da74c5413da5d568d7e25ee0ce39c17d9c4ee3f3bfd68a4361",
-				"dweb:/ipfs/QmQA9ua9diNnNhsCifLcVUoUPfE3CNawyobBFYVQv5sKMN"
+				"bzz-raw://b7cd9cda9c8a94e4375b954b697d41bab0a9eba68d13114535e7fb4fcbcd8af6",
+				"dweb:/ipfs/QmePpvCn22tqSFcKyPbJKpNsyYqoUFsoh5BKPYq6R2B26H"
 			]
 		}
 	},

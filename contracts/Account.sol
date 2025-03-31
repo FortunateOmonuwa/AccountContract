@@ -15,7 +15,7 @@ contract Account{
     }
     UserAccount[] accounts;
 
-    mapping (uint => UserAccount) private  specificAccount;
+    mapping (string => UserAccount) private  specificAccount;
     uint private currentId = 1;
     function CreateAccount(string memory _phoneNumber, string memory _email, string[] memory _secrets) external returns ( UserAccount memory){
         require(bytes(_phoneNumber).length >= 10, "Invalid Phonenumber");
@@ -40,7 +40,7 @@ contract Account{
 
         accounts.push(newAccount);
         currentId+=1;
-        specificAccount[currentId] = newAccount;
+        specificAccount[newAccount.email] = newAccount;
         return  newAccount;
     }
 
@@ -48,7 +48,7 @@ contract Account{
         return accounts;
     }
 
-    function ViewAccountByID(uint256 _id) external  view returns(UserAccount memory){
+    function ViewAccountByEmail(string memory _id) external  view returns(UserAccount memory){
         UserAccount memory account = specificAccount[_id];
         return  account;
     }
